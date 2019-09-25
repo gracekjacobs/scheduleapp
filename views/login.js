@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, TouchableOpacity, ImageBackground} from 'react-
 //for screen switching
 import { Actions } from 'react-native-router-flux';
 
-class Example extends React.Component {
+class Login extends React.Component {
 
   //I always like keeping this here, it is for performing actions before the component (the screen) loads
     componentWillMount(){
@@ -12,7 +12,7 @@ class Example extends React.Component {
 
     buttonPressed = () => {
         //this is how you switch screens
-        Actions.login();
+        // Actions.login();
     }
     
     render() {
