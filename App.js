@@ -4,7 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 //this is the package that's used for the screen routing
 import { Router, Scene} from 'react-native-router-flux';
 //this imports the other screen, usually you'll have a list of these for all the screens in teh app
-import Example from './views/Example'
+import Example from './views/Example';
+import Login from './views/login';
 
 export default function App() {
   return (
@@ -20,6 +21,10 @@ export default function App() {
           component = { Example }
           //hide nav bar?
           hideNavBar = { true }
+        />
+        <Scene
+          key = 'login'
+          component = { Login }
         />
       </Scene>
     </Router>
