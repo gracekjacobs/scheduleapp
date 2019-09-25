@@ -5,7 +5,7 @@ import { Actions } from 'react-native-router-flux';
 
 class Login extends React.Component {
 
-  //I always like keeping this here, it is for performing actions before the component (the screen) loads
+    //I always like keeping this here, it is for performing actions before the component (the screen) loads
     componentWillMount(){
 
     }
@@ -33,11 +33,8 @@ class Login extends React.Component {
             </ImageBackground>
           </View>
         );
-      }
-
-
-      
     }
+}
   
 
 const styles = StyleSheet.create({
