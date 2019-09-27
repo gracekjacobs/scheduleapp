@@ -11,8 +11,8 @@ class Login extends React.Component {
     }
 
     buttonPressed = () => {
-        //this is how you switch screens
-        // Actions.login();
+        // this is how you switch screens
+        Actions.TeacherList();
     }
     
     render() {
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column-reverse',
-        height: '100%',
+        height: '75%',
         width: '100%',
     },
     button: {

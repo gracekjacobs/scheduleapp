@@ -5,6 +5,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Router, Scene} from 'react-native-router-flux';
 //this imports the other screen, usually you'll have a list of these for all the screens in teh app
 import Login from './views/Login';
+import TeacherList from './views/TeacherList';
+import RegisteredLogin from './views/RegisteredLogin';
+import Signup from './views/Signup';
+import TeacherCalendarSetup from './views/TeacherCalendarSetup';
 
 export default function App() {
   return (
@@ -18,6 +22,27 @@ export default function App() {
         //this is the component, the screen is rendered as a component, in other words this is the class for the screen to use
           component = { Login }
           //hide nav bar?
+          hideNavBar = { true }
+        />
+        <Scene
+          key = 'TeacherList'
+          component = { TeacherList }
+          hideNavBar = { false }
+          title = 'Browse'
+        />
+        <Scene
+          key = 'RegisteredLogin'
+          component = { RegisteredLogin }
+          hideNavBar = { true }
+        />
+        <Scene
+          key = 'Signup'
+          component = { Signup }
+          hideNavBar = { true }
+        />
+        <Scene
+          key = 'TeacherCalendarSetup'
+          component = { TeacherCalendarSetup }
           hideNavBar = { true }
         />
       </Scene>
