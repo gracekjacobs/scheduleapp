@@ -38,7 +38,7 @@ export default function App() {
         <Scene
           key = 'Signup'
           component = { Signup }
-          hideNavBar = { true }
+          hideNavBar = { true }  
         />
         <Scene
           key = 'TeacherCalendarSetup'

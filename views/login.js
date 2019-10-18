@@ -20,8 +20,8 @@ class Login extends React.Component {
           // this is just random filler for the template, but this is where what the user sees is rendered
           <View>
            {/* this loads the image into the background */}
-            <ImageBackground source={{uri: 'https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}} style={styles.background} resizeMode='cover'>
-                <Text style={styles.title}> ScheduleAppName  </Text>
+            <View style={styles.background}>
+                <Text style={styles.title}> MusicPro  </Text>
                 <View style={styles.buttonContainer}>
                     <TouchableOpacity onPress={() => this.buttonPressed()} style={styles.button}>
                         <Text style={styles.buttonText}>login</Text>
@@ -30,7 +30,7 @@ class Login extends React.Component {
                         <Text style={styles.buttonText}>sign up</Text>
                     </TouchableOpacity>
                 </View>
-            </ImageBackground>
+            </View>
           </View>
         );
     }
@@ -41,7 +41,8 @@ const styles = StyleSheet.create({
     background: {
         height: '100%',
         width: '100%',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: 'lightblue'
     },
     buttonContainer: {
         alignItems: 'center',
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     button: {
         height: 50,
         width: '95%',
-        backgroundColor: '#1c6e8c',
+        backgroundColor: 'white',
         marginBottom: 20,
         alignItems: 'center',
         justifyContent: 'center',
@@ -61,10 +62,10 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         fontSize: 30,
-        color: 'white'
+        color: 'black'
     },
     title: {
-        fontSize: 45,
+        fontSize: 70,
         paddingTop: '66%',
         color: 'white',
     }
