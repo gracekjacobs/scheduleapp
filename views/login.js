@@ -10,9 +10,13 @@ class Login extends React.Component {
 
     }
 
-    buttonPressed = () => {
+    loginPressed = () => {
         // this is how you switch screens
-        Actions.TeacherList();
+        Actions.RegisteredLogin();
+    }
+
+    signupPressed = () => {
+        Actions.Signup();
     }
     
     render() {
@@ -23,10 +27,10 @@ class Login extends React.Component {
             <View style={styles.background}>
                 <Text style={styles.title}> MusicPro  </Text>
                 <View style={styles.buttonContainer}>
-                    <TouchableOpacity onPress={() => this.buttonPressed()} style={styles.button}>
+                    <TouchableOpacity onPress={() => this.loginPressed()} style={styles.button} activeOpacity={.6}>
                         <Text style={styles.buttonText}>login</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => this.buttonPressed()} style={styles.button}>
+                    <TouchableOpacity onPress={() => this.signupPressed()} style={styles.button} activeOpacity={.6}>
                         <Text style={styles.buttonText}>sign up</Text>
                     </TouchableOpacity>
                 </View>
@@ -59,6 +63,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
+        
     },
     buttonText: {
         fontSize: 30,
