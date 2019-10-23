@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity, ImageBackground} from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, ImageBackground, Image} from 'react-native';
 //for screen switching
 import { Actions } from 'react-native-router-flux';
 

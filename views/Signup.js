@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity, TextInput } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 class Signup extends React.Component {
 
@@ -30,11 +31,11 @@ class Signup extends React.Component {
   }
 
   studentDone = () => {
-    alert('nice job!');
+    Actions.TeacherScheduleHome();
   }
 
   teacherDone = () => {
-    alert('good job!');
+    Actions.TeacherScheduleHome();
   }
 
   render() {

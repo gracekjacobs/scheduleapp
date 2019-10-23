@@ -9,6 +9,7 @@ import TeacherList from './views/TeacherList';
 import RegisteredLogin from './views/RegisteredLogin';
 import Signup from './views/Signup';
 import TeacherCalendarSetup from './views/TeacherCalendarSetup';
+import TeacherScheduleHome from './views/TeacherScheduleHome';
 
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
       <Scene key='root'>
         <Scene
         // this sets the name of the screen (title in the nav bar)
-          key = 'login'
+          key = 'Login'
         //this is the component, the screen is rendered as a component, in other words this is the class for the screen to use
           component = { Login }
           //hide nav bar?
@@ -43,6 +44,11 @@ export default function App() {
         <Scene
           key = 'TeacherCalendarSetup'
           component = { TeacherCalendarSetup }
+          hideNavBar = { true }
+        />
+        <Scene
+          key = "TeacherScheduleHome"
+          component = { TeacherScheduleHome }
           hideNavBar = { true }
         />
       </Scene>
